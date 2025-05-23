@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Vaishu (BUGGU) 💕</title>
+    <style>
+        body { 
+            background: linear-gradient(135deg, #fff0f5, #ffe6f0); 
+            text-align: center; 
+            font-family: Arial; 
+            padding: 20px; 
+        }
+        .title { 
+            font-size: 2.5rem; 
+            color: #ff69b4; 
+            margin: 20px 0; 
+        }
+        .countdown { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 15px; 
+            margin: 20px 0; 
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">💕 For My Vaishu (BUGGU) 💕</h1>
+    <div class="countdown">
+        <h3>Our Love Journey Since 25th Dec 2024</h3>
+        <p id="timer">Loading...</p>
+    </div>
+    <script>
+        function updateTimer() {
+            const start = new Date("2024-12-25");
+            const now = new Date();
+            const days = Math.floor((now - start) / (1000*60*60*24));
+            document.getElementById("timer").innerText = days + " beautiful days together! 💖";
+        }
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
